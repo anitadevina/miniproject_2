@@ -2,3 +2,9 @@
 target/
 dbt_packages/
 logs/
+
+# ignore profiles.yml in dbt project
+/profiles.yml
+
+# ignore sources.yml in dbt project
+/models/*/sources.yml
