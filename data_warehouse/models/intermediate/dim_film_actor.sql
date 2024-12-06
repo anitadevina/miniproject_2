@@ -1,5 +1,7 @@
 {{ config(materialized='table', schema='intermediate') }}
 
-SELECT 
-    *
-FROM {{ ref('raw_film_actor') }}
+SELECT
+    actor_id,
+    film_id,
+    last_update
+FROM {{ ref('raw_film_actor')}}
